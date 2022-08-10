@@ -18,16 +18,16 @@
 <body>
   <!-- / #main-header -->
   <header id="main-header">
-    <a id="logo-header" href="www.jafetbrito.com">
+    <a id="logo-header" href="127.0.0.1">
 			<span class="site-name">Formulario</span>
 		</a> <!-- / #logo-header -->
-    <span class="p">Desarrollo web y desarrollo de software jafino el fino </span>
+    <span class="p">"conocete a ti mismo"</span>
 
 		<nav>
 			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Acerca de</a></li>
-				<li><a href="#">Contacto</a></li>
+				<li><a href="127.0.0.1">Inicio</a></li>
+				<li><a href="mailto://contacto@jafetbrito.com">email</a></li>
+				<li><a href="tel://+527776027258">Contacto</a></li>
 			</ul>
 		</nav><!-- / nav -->
 
@@ -35,49 +35,55 @@
 
 
   <section id="main-content">
-	
-		<article>
-      <!-- En esta parte tienes que poner la introduccion, tiene que verse profecional y ahi dar referencias y todo este tipo de cuestiones-->
-			<header>
-				<h1>Solucion al requerimiento y propuesta 🕉</h1>
-			</header>
-			
-			<img src="http://placekitten.com/800/250" alt="Gatito" />
-			
-			<div class="content">
-        <h4>Formulario de registro de dos pasos ✔</h4>
-				<p>Desarrollar un formulario de registro con las siguentes caracteristicas</p>
-        <p>Primer paso</p>
-        <p></p>
-				<h4>JavaScript LocalStorage</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-			</div>
-			
-		</article> <!-- /article -->
-	
-	</section> <!-- / #main-content -->
-  
     <h1>Form</h1>
-    <form>
+    <form action="recibe.php" name="formulario" method="get">
         <fieldset>
           <legend>Formulario de registro de dos pasos</legend>
-          <p>
-            <input type="radio" name="size" id="size_1" value="small">
-            <label for="size_1">Bancos</label>
+             <p>
+            <label for="size_1">Ingresa tu Banco</label>
+            <select id="bancos"><option id="bbva">BBVA</option><option>Bancomer</option></select>
           </p>
           <p>
-            <input type="radio" name="size" id="size_2" value="medium">
-            <label for="size_2">Tiendas departamentales</label>
+            <label for="size_2">Ingresa tu Tienda Departamental</label>
+            <select><option>Sears</option><option>Liverpool</option></select>
           </p>
           <p>
-            <input type="radio" name="size" id="size_3" value="large">
-            <label for="size_3">Financieras</label>
+            <label for="size_3">Ingresa tu Financiera</label>
+            <select><option>BBVA</option><option>Bancomer</option></select>
           </p>
+          <p>
+            <label for="size_4">Ingresa la cantidad</label>
+            <input class="number"></input>
+          </p>
+          <button type="submit" class="step__button">Siguiente</button>
         </fieldset>
       </form>
+		
+	</section> <!-- / #main-content -->
+  
+   
+
+
+      <article>
+        <!-- En esta parte tienes que poner la introduccion, tiene que verse profecional y ahi dar referencias y todo este tipo de cuestiones-->
+        <header>
+          <h1>Solucion al requerimiento y propuesta 🕉</h1>
+        </header>
+        
+        <div class="content">
+          <h4>Formulario de registro de dos pasos ✔</h4>
+          <p>Desarrollar un formulario de registro con las siguentes caracteristicas</p>
+          <p>Primer paso</p>
+          <p></p>
+          <h4>JavaScript LocalStorage</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  
+        </div>
+        
+      </article> <!-- /article -->
+    
 
 
 
